@@ -376,4 +376,7 @@ BOARD_KERNEL_CMDLINE += log_buf_len=1024K
 # Protected VM firmware
 BOARD_PVMFWIMAGE_PARTITION_SIZE := 0x00100000
 
+# Verified Boot
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+
 -include vendor/google_devices/gs-common/proprietary/BoardConfigVendor.mk
